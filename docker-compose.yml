@@ -1,0 +1,26 @@
+services:
+  db:
+    container_name: pg
+    image: postgres
+    restart: always
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: 12345
+    networks:
+      - backend
+  api:
+    container_name: api
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/apirestful
+    ports:
+      - "3000:3000"
+    networks:
+      - backend
+    depends_on:
+      - db
+networks:
+  backend:
+    driver: bridge
