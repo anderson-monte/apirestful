@@ -1,6 +1,9 @@
 # API Restful 
 
-[![Rails](https://img.shields.io/badge/Built%20on-RoR-red)](https://img.shields.io/badge/Containers-Docker-blue) [![Docker](https://img.shields.io/badge/Containers-Docker-blue)](https://www.docker.com/) [![Rails](https://img.shields.io/badge/state-on%20development-brightgreen)]()
+[![Rails](https://img.shields.io/badge/Rails->=_7.0.2-gray?style=flat&labelColor=red)](https://img.shields.io/badge/Containers-Docker-blue)
+[![Docker](https://img.shields.io/badge/Docker-blue?style=flat&logo=docker)](https://www.docker.com/) 
+[![Postgres](https://img.shields.io/badge/Postgres-4169E1?style=flat&logo=postgresql&logoColor=white)]()
+[![](https://img.shields.io/badge/state-on_development-brightgreen)]()
 
 ## Description
 It's a on development Ruby on Rails APi to serve as backend a E-Commerce app.
@@ -17,7 +20,7 @@ This is for part of my personal portfolio.
 
 ⚠️ It may have others feactures in future.
 
-## Will be build on:
+## Build in:
 
 | Stack | Version |
 | ----- | ------- |
