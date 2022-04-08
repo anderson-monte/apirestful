@@ -6,7 +6,7 @@ services:
     volumes:
       - db:/var/lib/postgresql/data
     environment:
-      POSTGRES_PASSWORD: 1234
+      POSTGRES_PASSWORD:
     ports:
       - "5454:5432"
     networks:
@@ -23,9 +23,9 @@ services:
     ports:
       - "3000:3000"
     environment:
-      POSTGRES_HOST: db
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 1234
+      POSTGRES_HOST: DATABASE_SERVICE_NAME
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD:
     networks:
       - backend
     depends_on:
