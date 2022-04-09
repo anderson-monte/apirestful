@@ -17,9 +17,8 @@ services:
       context: ./
       dockerfile: Dockerfile.dev
     command: puma
-    working_dir: /api
     volumes:
-      - .:/api
+      - .:/app
     ports:
       - "3000:3000"
     environment:
